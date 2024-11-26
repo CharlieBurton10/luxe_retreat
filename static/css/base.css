@@ -5,9 +5,21 @@ html {
 body {
 	background: url('/media/homepage.jpg') no-repeat center center fixed;
 	background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(73vh - 164px);
     color: #555;
     font-family: "Cormorant+Garamond";
+}
+
+.footer-container {
+    padding: 50px;
+}
+
+a {
+    color: goldenrod;
+}
+
+a:hover {
+    color: goldenrod;
 }
 
 /* from Bulma */
@@ -21,6 +33,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    color: goldenrod;
 }
 
 .main-logo-link {
@@ -28,8 +41,8 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: rgba(255, 255, 255, 0.826);
+    color: goldenrod;
     min-width: 260px;
 }
 
@@ -44,16 +57,24 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: goldenrod;
     color: white;
 }
 
 .text-black {
-    color: #000 !important;
+    color: grey !important;
 }
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.dropdown-item {
+    color: goldenrod;
+}
+
+.dropdown-item:hover {
+    color: grey;
 }
 
 /* --------------------------------- Media queries */
@@ -78,4 +99,5 @@ body {
     .header-container {
         padding-top: 164px;
     }
+
 }
