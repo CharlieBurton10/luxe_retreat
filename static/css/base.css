@@ -12,6 +12,8 @@ body {
 
 .footer-container {
     padding: 50px;
+    padding-bottom: 100px;
+    align-content: center;
 }
 
 a {
@@ -100,4 +102,29 @@ a:hover {
         padding-top: 164px;
     }
 
+    .footer-container {
+        width: 100%;
+    }
+
 }
+
+/* fixed top navbar only on small and up */
+@media only screen and (max-width: 767px) {
+
+    .shop-now-button {
+        min-width: 125px;
+        padding: 3px;
+    }
+
+}
+
+/* fixed top navbar only on extra small and up */
+@media only screen and (max-width: 580px) {
+    .footer-container {
+        width: 100%;
+        padding-bottom: 150px;
+    }
+
+}
+
+
