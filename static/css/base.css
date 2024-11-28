@@ -85,12 +85,26 @@ a:hover {
     top: 0;
     left: 0;
     position: fixed;
-    background: white;
+    background: floralwhite;
     z-index: -1;
 }
 
+
 .card-center {
     padding-top: 100px;
+    padding-bottom: 100px;
+    color: grey;
+}
+
+.card-center1 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: grey;
+}
+
+.card {
+    background-color: floralwhite;
+    border: floralwhite;
 }
 
 /* --------------------------------- Media queries */
