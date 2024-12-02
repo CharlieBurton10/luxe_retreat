@@ -1,0 +1,152 @@
+[
+    {
+      "pk": 1,
+      "model": "treatments.treatment",
+      "fields": {
+        "sku": "st1001",
+        "name": "Express Bliss Facial",
+        "description": "This treatment uses delicate techniques to induce feelings of deep peace and beautifully glowing skin. A perfect quick-fix for dehydrated and tired skin.",
+        "price": 59,
+        "category": 2,
+        "time": "40 minutes"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "treatments.treatment",
+        "fields": {
+          "sku": "st1002",
+          "name": "Signature Facial",
+          "description": "Using the Natural Spa Factory, this facial is the perfect compliment for every skin type. We begin by giving the skin a lovely deep cleanse and gently remove any dead skin cells with an exfoliator. A facial massage will be performed across the chest, shoulders, neck, and face. Whilst the facial mask is working its magic, we will work ours with a luxurious scalp massage. Finishing off with a moisturiser, you will leave illuminated.",
+          "price": 79,
+          "category": 2,
+          "time": "55 minutes"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "treatments.treatment",
+        "fields": {
+          "sku": "st1003",
+          "name": "Back, Neck and Shoulder Massage",
+          "description": "Traditional back, neck and shoulder massage. Treat those areas that are impossible to reach by yourself. We gently cleanse and massage away tensions using a blend of oil and deeply hydrating lotion to leave your back, neck and shoulders feeling nourished and supple.",
+          "price": 45,
+          "category": 3,
+          "time": "25 minutes"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "treatments.treatment",
+        "fields": {
+          "sku": "st1004",
+          "name": "Full Body Massage",
+          "description": "Traditional full body massage. Condition skin and muscles with this all-embracing full body massage. Helping to relieve stress, aching muscles and refreshes the mind, body and soul.",
+          "price": 79,
+          "category": 3,
+          "time": "55 minutes"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "treatments.treatment",
+        "fields": {
+          "sku": "st1005",
+          "name": "Signature Massage",
+          "description": "An indulgent full body treatment using Natural Spa Factory's fig & vanilla scrub followed by a deeply relaxing full body massage using a blend of essential oils.",
+          "price": 90,
+          "category": 3,
+          "time": "80 minutes"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "treatments.treatment",
+        "fields": {
+          "sku": "st1006",
+          "name": "Express Manicure",
+          "description": "Our express manicure includes nail shaping, cuticle grooming, a hand massage and finishes with painting the nails.",
+          "price": 35,
+          "category": 4,
+          "time": "45 minutes"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "treatments.treatment",
+        "fields": {
+          "sku": "st1007",
+          "name": "Signature Manicure",
+          "description": "This luxury treatment begins with soaking of the nails, nail shaping, cuticle grooming, heated mitts and a hand and arm massage finished with an application of a laquer.",
+          "price": 55,
+          "category": 4,
+          "time": "75 minutes"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "treatments.treatment",
+        "fields": {
+          "sku": "st1008",
+          "name": "Express Pedicure",
+          "description": "We begin this treatment by soaking your feet in a lovely warm water and the natural spa factorys salts, we exfoliate and smooth callused feet. We cut and file the nails, groom the cuticles, perform a foot and finish by applying a laquer.",
+          "price": 30,
+          "category": 4,
+          "time": "35 minutes"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "treatments.treatment",
+        "fields": {
+          "sku": "st1009",
+          "name": "Signature Pedicure",
+          "description": "We begin this treatment by soaking your feet in a lovely warm water and the natural spa factorys salts, we exfoliate and smooth callused feet. We cut and file the nails, groom the cuticles, pop your feet into our heated booties and perform a luxury foot and leg massage and finish by applying a laquer.",
+          "price": 55,
+          "category": 4,
+          "time": "60 minutes"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "treatments.treatment",
+        "fields": {
+          "sku": "st10010",
+          "name": "Sunrise Retreat",
+          "description": "Early risers can enjoy a morning of serenity, with 3 hours use of the facilities along with complimentary use of towels, robes & slippers. The Sunrise Retreat inludes a relaxing 25 minute back or head massage, and you get to end your visit with a light breakfast of a pastry and a hot drink.",
+          "price": 60,
+          "category": 1,
+          "time": "3 hours"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "treatments.treatment",
+        "fields": {
+          "sku": "st10011",
+          "name": "Afternoon Retreat",
+          "description": "Escape the stress of the day, with 3 hours use of the facilities along with complimentary use of towels, robes & slippers. The Afternoon Retreat inludes a relaxing 25 minute back or head massage, and you get to end your visit with a cream tea and a hot drink.",
+          "price": 60,
+          "category": 1,
+          "time": "3 hours"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "treatments.treatment",
+        "fields": {
+          "sku": "st10012",
+          "name": "Signature Retreat Day",
+          "description": "Unwind and indulge with The Signature Retreat day, leaving you feeling completely rebalanced and revitalised. Choose from our Signature Massage OR Facial, Signature Manicure OR Pedicure, followed by afternoon tea and bubbles in our Garden Café.",
+          "price": 175,
+          "category": 1,
+          "time": "6 hours"
+        }
+    },
+    
+
+
+
+
+
+]

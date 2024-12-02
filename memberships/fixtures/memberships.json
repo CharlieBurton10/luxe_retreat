@@ -1,0 +1,14 @@
+[
+    {
+        "pk": 100,
+        "model": "memberships.membership",
+        "fields": {
+        "sku": "m1001",
+        "name": "Full Membership",
+        "description": "This membership category gives access to facilities 7 days a week (from 7.30am-9pm). It also includes six complimentary guest passes and full access to all facilities.",
+        "price": 4200,
+        "category": 1,
+        }
+    },
+
+]
