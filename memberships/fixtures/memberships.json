@@ -7,7 +7,7 @@
         "name": "Full Membership",
         "description": "This membership category gives access to facilities 7 days a week (from 7.30am-9pm). It also includes six complimentary guest passes and full access to all facilities.",
         "price": 4200,
-        "category": 1,
+        "category": 1
         }
     },
     {
@@ -18,7 +18,7 @@
         "name": "Gym Membership",
         "description": "This membership category gives access Monday to Sunday from 7.30am to 9.00pm. It includes full access to gym. Includes gym induction, fitness programme and use of the sauna and steam room.",
         "price": 1650,
-        "category": 2,
+        "category": 2
         }
     },
     {
@@ -29,7 +29,7 @@
         "name": "Morning Membership",
         "description": "This membership category gives full access to all facilities Monday to Friday from 7.30am to 12pm.",
         "price": 2250,
-        "category": 3,
+        "category": 3
         }
     },
     {
@@ -40,7 +40,7 @@
         "name": "Evening Membership",
         "description": "This membership category gives full access to all facilities Monday to Sunday from 5pm to 9pm.",
         "price": 2250,
-        "category": 4,
+        "category": 4
         }
     }
 ]
