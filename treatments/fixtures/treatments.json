@@ -111,7 +111,7 @@
         "pk": 10,
         "model": "treatments.treatment",
         "fields": {
-          "sku": "st10010",
+          "sku": "st1010",
           "name": "Sunrise Retreat",
           "description": "Early risers can enjoy a morning of serenity, with 3 hours use of the facilities along with complimentary use of towels, robes & slippers. The Sunrise Retreat inludes a relaxing 25 minute back or head massage, and you get to end your visit with a light breakfast of a pastry and a hot drink.",
           "price": 60,
@@ -123,7 +123,7 @@
         "pk": 11,
         "model": "treatments.treatment",
         "fields": {
-          "sku": "st10011",
+          "sku": "st1011",
           "name": "Afternoon Retreat",
           "description": "Escape the stress of the day, with 3 hours use of the facilities along with complimentary use of towels, robes & slippers. The Afternoon Retreat inludes a relaxing 25 minute back or head massage, and you get to end your visit with a cream tea and a hot drink.",
           "price": 60,
@@ -135,7 +135,7 @@
         "pk": 12,
         "model": "treatments.treatment",
         "fields": {
-          "sku": "st10012",
+          "sku": "st1012",
           "name": "Signature Retreat Day",
           "description": "Unwind and indulge with The Signature Retreat day, leaving you feeling completely rebalanced and revitalised. Choose from our Signature Massage OR Facial, Signature Manicure OR Pedicure, followed by afternoon tea and bubbles in our Garden Café.",
           "price": 175,
