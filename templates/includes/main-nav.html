@@ -7,16 +7,16 @@
         </li>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'memberships' %}" id="all-memberships-link">
                 Membership
             </a>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="spa-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'treatments' %}" id="all-treatments-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Spa Treatments
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="spa-link">
+            <div class="dropdown-menu border-0" aria-labelledby="all-treatments-link">
                 <a href="" class="dropdown-item">Spa Packages</a>
                 <a href="" class="dropdown-item">Facials</a>
                 <a href="" class="dropdown-item">Body Treatments</a>
