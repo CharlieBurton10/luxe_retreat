@@ -6,7 +6,7 @@ body {
 	background: url('/media/homepage.jpg') no-repeat center center fixed;
 	background-size: cover;
     height: calc(73vh - 164px);
-    color: #555;
+    color: grey;
     font-family: "Cormorant+Garamond";
 }
 
@@ -48,8 +48,8 @@ a:hover {
     min-width: 260px;
 }
 
-.btn-black {
-    background: black;
+.btn-grey {
+    background: grey;
     color: white;
 }
 
@@ -67,8 +67,8 @@ a:hover {
     color: grey !important;
 }
 
-.border-black {
-    border: 1px solid black !important;
+.border-grey {
+    border: 1px solid grey !important;
 }
 
 .dropdown-item {
@@ -106,9 +106,19 @@ a:hover {
     color: grey;
 }
 
+.card-center2 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: grey;
+}
+
 .card {
     background-color: floralwhite;
     border: floralwhite;
+}
+
+.membership-container {
+    color: grey;
 }
 
 /* --------------------------------- Media queries */

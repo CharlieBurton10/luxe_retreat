@@ -18,6 +18,22 @@
                 <hr class="w-50 mb-1">
             </div>
         </div>
+        <br>
+        <br>
+        <div class="col-12 col-lg-4 mx-auto py-1 py-lg-0">
+            <form method="GET" action="">
+                <div class="input-group w-100">
+                    <input class="form-control border border-grey rounded-0" type="text" name="q" placeholder="Search our Treatments">
+                    <div class="input-group-append">
+                        <button class="form-control btn btn-grey border border-grey rounded-0" type="submit">
+                            <span class="icon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
         <div class="row">
             <div class="membership-container col-10 offset-1">
                 <div class="row mt-1 mb-2"></div>
@@ -26,12 +42,10 @@
                         <div class="col-sm-6 col-md-6 col-lg-3 col-xl-4">
                             <div class="card h-100 border-0">
                                 <div class="card-body pb-0">
-                                    <p class="mb-0">{{ treatment.name }}</p>
-                                </div>
-                                <div class="card-footer bg-white pt-0 border-0 text-left">
+                                    <p class="lead mb-0 font-weight-bold">{{ treatment.name }}</p>
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">£{{ treatment.description }}</p>
+                                            <p class="mb-0 text-left">{{ treatment.description }}</p>
                                             <p class="lead mb-0 text-left font-weight-bold">£{{ treatment.price }}</p>
                                             <p class="lead mb-0 text-left font-weight-bold">{{ treatment.time }}</p>
                                         </div>
