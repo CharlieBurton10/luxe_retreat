@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 from django.db.models import Q
-from .models import Treatment
+from .models import Treatment, Category
 
 # Create your views here.
 
@@ -10,8 +10,14 @@ def all_treatments(request):
 
     treatments = Treatment.objects.all()
     query = None
+    categories = None
 
     if request.GET:
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            treatments = treatments.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -24,6 +30,7 @@ def all_treatments(request):
     context = {
         'treatments': treatments,
         'search_term': query,
+        'current_categories': categories,
     }
 
     return render(request, 'treatments/treatments.html', context)

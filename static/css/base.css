@@ -36,6 +36,7 @@ a:hover {
 .logo-font {
     text-transform: uppercase;
     color: goldenrod;
+    border: 0;
 }
 
 .main-logo-link {
@@ -110,6 +111,8 @@ a:hover {
 .membership-container {
     color: grey;
 }
+
+/* --------------------------------- Facilities */
 
 .gallery-block{
     padding: 20px;
@@ -186,6 +189,19 @@ a:hover {
     margin-top: 10px;
     font-weight: 300;
   }
+
+/* --------------------------------- Treatments Page */
+  .btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
   
 
 
