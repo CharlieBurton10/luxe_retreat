@@ -21,7 +21,7 @@
         <br>
         <br>
         <div class="col-12 col-lg-4 mx-auto py-1 py-lg-0">
-            <form method="GET" action="">
+            <form method="GET" action="{% url 'treatments' %}">
                 <div class="input-group w-100">
                     <input class="form-control border border-grey rounded-0" type="text" name="q" placeholder="Search our Treatments">
                     <div class="input-group-append">
@@ -69,6 +69,8 @@
                         </div>
                         {% endif %}
                     {% endfor %} 
+                    <br>
+                    <br>
                 </div>
             </div>
         </div>
