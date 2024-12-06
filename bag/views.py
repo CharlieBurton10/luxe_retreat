@@ -19,4 +19,4 @@ def add_to_bag(request, item_id):
         bag[item_id] = quantity
 
     request.session['bag'] = bag
-    return render(request, 'treatments/treatments.html')
+    return render(request, 'bag/bag.html')
