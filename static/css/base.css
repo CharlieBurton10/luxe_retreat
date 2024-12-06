@@ -64,6 +64,20 @@ a:hover {
     color: white;
 }
 
+.btn-bag {
+    color: grey;
+    border-color: grey;
+    padding: 0;
+}
+
+.quantity-form {
+    height: 25px;
+    background-color: white;
+    border: 0;
+    color: grey;
+    padding: 6px;
+}
+
 .text-black {
     color: grey !important;
     font-size: 20px;

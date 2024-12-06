@@ -33,6 +33,15 @@
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">£{{ membership.price }} per year</p>
                                             <p class="mb-0 text-left">{{ membership.description }}</p>
+                                            <form class="form" action="" method="POST">
+                                                {% csrf_token %}
+                                                <div class="form-row float-right">
+                                                    <div class="col-12">
+                                                        <input type="submit" class="btn btn-black btn-bag rounded-0 text-uppercase" value="Add to Basket">
+                                                    </div>
+                                                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
