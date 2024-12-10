@@ -41,27 +41,34 @@
                                         <p class="my-0 small text-muted">SKU: {{ item.treatment.sku|upper }}</p>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.treatment.price }}</p>
+                                        <p class="my-0">£{{ item.treatment.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
-                                        <p class="my-0">{{ item.quantity }}</p>
+                                        <form class="form" action="{% url 'adjust_bag' item.item_id %}" method="POST">
+                                            {% csrf_token %}
+                                            <div class="form-row">
+                                                <div class="col-sm-6 float-left form-group input-group">
+                                                    <input class="form-control qty_input quantity-form text-center" type="number" name="quantity" value="1" min="1" max="10" data-item_id="{{ item.item_id  }}" id="id_qty_{{ item.item_id  }}">
+                                                </div>
+                                            </div>
+                                        </form>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.treatment.price }}</p>
+                                        <p class="my-0">£{{ item.treatment.price }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
-                                    <h4><strong>Basket Total: ${{ total|floatformat:2 }}</strong></h4>
+                                    <h4><strong>Basket Total: £{{ total|floatformat:2 }}</strong></h4>
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
                                     <a href="" class="btn btn-black rounded-0 btn-lg">
-                                        <span class="text-uppercase">Secure Checkout</span>
+                                        <span class="text-uppercase text-black">Secure Checkout</span>
                                         <span class="icon">
-                                            <i class="fas fa-lock"></i>
+                                            <i class="fas fa-lock text-black"></i>
                                         </span>
                                     </a>
                                 </td>

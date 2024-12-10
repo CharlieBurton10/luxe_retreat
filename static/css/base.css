@@ -75,7 +75,11 @@ a:hover {
     background-color: white;
     border: 0;
     color: grey;
-    padding: 6px;
+    padding: 4px;
+}
+
+.form-margin {
+    margin: 0px;
 }
 
 .text-black {
