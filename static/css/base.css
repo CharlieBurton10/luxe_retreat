@@ -83,6 +83,11 @@ a:hover {
     margin: 0px;
 }
 
+.text-grey {
+    color: grey !important;
+    font-size: 12px;
+}
+
 .text-black {
     color: grey !important;
     font-size: 20px;
