@@ -10,6 +10,8 @@ body {
     font-family: "Cormorant+Garamond";
 }
 
+
+
 .footer-container {
     padding: 50px;
     padding-bottom: 100px;
@@ -63,6 +65,11 @@ a:hover {
 .btn-black:focus {
     background: goldenrod;
     color: white;
+}
+
+.btn-black {
+    background-color: white;
+    color: grey;
 }
 
 .btn-bag {
