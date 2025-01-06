@@ -42,9 +42,9 @@ def add_treatment(request):
     if request.method == 'POST':
         form = TreatmentForm(request.POST)
         if form.is_valid():
-            form.save()
+            treatment = form.save()
             messages.success(request, 'Successfully added Treatment!')
-            return redirect(reverse('add_treatment'))
+            return redirect(reverse('treatments'))
         else:
             messages.error(request, 'Failed to add treatment. Please ensure the form is valid.')
     else:    
@@ -79,3 +79,10 @@ def edit_treatment(request, treatment_id):
     }
 
     return render(request, template, context)
+
+def delete_treatment(request, treatment_id):
+    """ Delete a treatment """
+    treatment = get_object_or_404(Treatment, pk=treatment_id)
+    treatment.delete()
+    messages.success(request, 'Treatment deleted!')
+    return redirect(reverse('treatments'))
