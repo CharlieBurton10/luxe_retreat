@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 
@@ -53,6 +53,29 @@ def add_treatment(request):
     template = 'treatments/add_treatment.html'
     context = {
         'form': form,
+    }
+
+    return render(request, template, context)
+
+def edit_treatment(request, treatment_id):
+    """ Edit a treatments already available """
+    treatment = get_object_or_404(Treatment, pk=treatment_id)
+    if request.method == 'POST':
+        form = TreatmentForm(request.POST, instance=treatment)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated Treatment!')
+            return redirect(reverse('treatments'))
+        else:
+            messages.error(request, 'Failed to update Treatment. Please ensure the form is valid.')
+    else:
+        form = TreatmentForm(instance=treatment)
+        messages.info(request, f'You are editing {treatment.name}')
+
+    template = 'treatments/edit_treatment.html'
+    context = {
+        'form': form,
+        'treatment': treatment,
     }
 
     return render(request, template, context)
