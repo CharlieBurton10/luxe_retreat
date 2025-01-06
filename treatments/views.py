@@ -39,8 +39,17 @@ def all_treatments(request):
 
 def add_treatment(request):
     """ Add a treatment to the store """
-        
-    form = TreatmentForm()
+    if request.method == 'POST':
+        form = TreatmentForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added Treatment!')
+            return redirect(reverse('add_treatment'))
+        else:
+            messages.error(request, 'Failed to add treatment. Please ensure the form is valid.')
+    else:    
+        form = TreatmentForm()
+
     template = 'treatments/add_treatment.html'
     context = {
         'form': form,
