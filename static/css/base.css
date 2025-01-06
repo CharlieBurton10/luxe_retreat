@@ -65,7 +65,7 @@ a:hover {
     color: white;
 }
 
-.btn-black {
+.btn-black, .btn-outline-black {
     background-color: white;
     color: grey;
 }

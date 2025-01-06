@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 from django.db.models import Q
+
 from .models import Treatment, Category
+from .forms import TreatmentForm
 
 # Create your views here.
 
@@ -34,3 +36,14 @@ def all_treatments(request):
     }
 
     return render(request, 'treatments/treatments.html', context)
+
+def add_treatment(request):
+    """ Add a treatment to the store """
+        
+    form = TreatmentForm()
+    template = 'treatments/add_treatment.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
