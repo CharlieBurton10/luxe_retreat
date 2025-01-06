@@ -1,0 +1,20 @@
+Hello {{ order.full_name }}!
+
+This is a confirmation of your order at Luxe Retreat. Your order information is below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Total: ${{ order.total }}
+
+We looking forward to welcoming you for your treatment. We will contact you in due course with availbility.
+
+We've got your phone number on file as {{ order.phone_number }}.
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+Thank you for your order!
+
+Sincerely,
+
+Luxe Retreat
