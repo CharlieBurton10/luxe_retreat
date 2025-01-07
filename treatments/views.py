@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 
 from .models import Treatment, Category
@@ -37,6 +38,7 @@ def all_treatments(request):
 
     return render(request, 'treatments/treatments.html', context)
 
+@login_required
 def add_treatment(request):
     """ Add a treatment to the store """
     if request.method == 'POST':
@@ -57,6 +59,7 @@ def add_treatment(request):
 
     return render(request, template, context)
 
+@login_required
 def edit_treatment(request, treatment_id):
     """ Edit a treatments already available """
     treatment = get_object_or_404(Treatment, pk=treatment_id)
@@ -80,6 +83,7 @@ def edit_treatment(request, treatment_id):
 
     return render(request, template, context)
 
+@login_required
 def delete_treatment(request, treatment_id):
     """ Delete a treatment """
     treatment = get_object_or_404(Treatment, pk=treatment_id)
