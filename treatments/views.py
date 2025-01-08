@@ -40,7 +40,11 @@ def all_treatments(request):
 
 @login_required
 def add_treatment(request):
-    """ Add a treatment to the store """
+    """ Add a treatment """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only managers can do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = TreatmentForm(request.POST)
         if form.is_valid():
@@ -62,6 +66,10 @@ def add_treatment(request):
 @login_required
 def edit_treatment(request, treatment_id):
     """ Edit a treatments already available """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only managers can do that.')
+        return redirect(reverse('home'))
+
     treatment = get_object_or_404(Treatment, pk=treatment_id)
     if request.method == 'POST':
         form = TreatmentForm(request.POST, instance=treatment)
@@ -86,6 +94,10 @@ def edit_treatment(request, treatment_id):
 @login_required
 def delete_treatment(request, treatment_id):
     """ Delete a treatment """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only managers can do that.')
+        return redirect(reverse('home'))
+        
     treatment = get_object_or_404(Treatment, pk=treatment_id)
     treatment.delete()
     messages.success(request, 'Treatment deleted!')
