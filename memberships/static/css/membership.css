@@ -1,7 +1,0 @@
-body {
-	background: url('/media/breathe.jpg') no-repeat center center fixed;
-	background-size: cover;
-    height: calc(73vh - 164px);
-    color: grey;
-    font-family: "Cormorant+Garamond";
-}
