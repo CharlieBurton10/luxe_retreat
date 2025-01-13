@@ -21,19 +21,19 @@ body {
 .sauna {
     background: url('/media/sauna.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center;
 }
 
 .jacuzzi {
     background: url('/media/jacuzzi.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center;
 }
 
 .gym {
     background: url('/media/gym.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center;
 }
 
 .footer-container {
