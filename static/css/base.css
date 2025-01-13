@@ -11,10 +11,9 @@ body {
 }
 
 .breathe {
-    background: url('/media/breathe.jpg');
+    background: url('/media/breathe.jpg') no-repeat center center fixed;
     width: 100px;
     height: 200px;
-    object-fit: contain;
     border-radius: 6px;
 }
 
