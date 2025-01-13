@@ -26,6 +26,10 @@ body {
     background: url('/media/jacuzzi.jpg');
 }
 
+.gym {
+    background: url('/media/gym.jpg');
+}
+
 .footer-container {
     padding: 50px;
     padding-bottom: 100px;
