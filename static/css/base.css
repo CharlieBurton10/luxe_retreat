@@ -11,10 +11,11 @@ body {
 }
 
 .breathe {
-    background: url('/media/breathe.jpg') no-repeat center center fixed;
-    width: 100px;
-    height: 200px;
-    border-radius: 6px;
+    background: url('/media/breathe.jpg') no-repeat center center;
+}
+
+.changingrooms {
+    background: url('/media/changingrooms.jpg') no-repeat center center;
 }
 
 .footer-container {
