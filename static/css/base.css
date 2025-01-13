@@ -19,13 +19,13 @@ body {
 }
 
 .sauna {
-    background: url('/media/sauna.jpg');
+    background: url('/media/sauna1.jpg');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .jacuzzi {
-    background: url('/media/jacuzzi.jpg');
+    background: url('/media/jacuzzi1.jpg');
     background-repeat: no-repeat;
     background-position: center;
 }
