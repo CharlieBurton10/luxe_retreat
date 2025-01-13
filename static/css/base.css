@@ -10,6 +10,10 @@ body {
     font-family: "Cormorant+Garamond";
 }
 
+.breathe {
+    background: url('/media/breathe.jpg');
+}
+
 .footer-container {
     padding: 50px;
     padding-bottom: 100px;
