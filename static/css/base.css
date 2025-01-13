@@ -18,6 +18,14 @@ body {
     background: url('/media/changingrooms.jpg') no-repeat center center;
 }
 
+.sauna {
+    background: url('/media/sauna.jpg');
+}
+
+.jacuzzi {
+    background: url('/media/jacuzzi.jpg');
+}
+
 .footer-container {
     padding: 50px;
     padding-bottom: 100px;
