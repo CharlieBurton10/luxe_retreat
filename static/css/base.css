@@ -10,7 +10,7 @@ body {
     font-family: "Cormorant+Garamond";
 }
 
-.breathe {
+/*.breathe {
     background: url('/media/breathe.jpg') no-repeat center center;
 }
 
@@ -34,7 +34,7 @@ body {
     background: url('/media/gym.jpg');
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
 .footer-container {
     padding: 50px;
@@ -48,7 +48,7 @@ a {
 
 a:hover {
     color: goldenrod;
-}
+} 
 
 /* from Bulma */
 .icon {
@@ -195,8 +195,8 @@ input[name='q']::placeholder {
     margin-bottom: 0;
     background: black;
     opacity: 1;
-    width:  350px;
-    height: 350px;
+    width:  360px;
+    height: 360px;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -206,8 +206,8 @@ input[name='q']::placeholder {
     transition: 0.8s ease;
     display: block;
     margin: auto;
-    width:  375px;
-    height: 350px;
+    width:  475px;
+    height: 375px;
     padding: 0;
     text-align: center;
   }
