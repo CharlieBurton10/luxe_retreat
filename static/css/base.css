@@ -489,7 +489,7 @@ input[name='q']::placeholder {
     }
 
     .text-black{
-        font-size: smaller;
+        font-size: 12px;
     }
 }
 
