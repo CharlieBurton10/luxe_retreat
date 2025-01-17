@@ -438,6 +438,10 @@ input[name='q']::placeholder {
         padding-bottom: 150px;
     }
 
+    .footer-container.col-4 {
+        max-width: 0%;
+    }
+
     .navbar {
         position: none;
         padding: 0;
