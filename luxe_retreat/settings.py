@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG =  False #'DEVELOPMENT' in os.environ
-DEBUG = True
+DEBUG = False
 
 
 ALLOWED_HOSTS = ['luxe-retreat-cf96daa6ac2f.herokuapp.com', 'localhost', '8000-charlieburt-luxeretreat-ohiu79p7nhv.ws.codeinstitute-ide.net',]
