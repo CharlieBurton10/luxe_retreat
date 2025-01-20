@@ -26,7 +26,7 @@
                 {% if bag_items %}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless text-black">
-                            <thead class="text-black">
+                            <thead class="text-black text-center">
                                 <tr>
                                     <th scope="col">Treatments Info</th>
                                     <th scope="col">Price</th>
@@ -66,8 +66,8 @@
                                 </tr>
                             {% endfor %}
                             <tr>
-                                <td colspan="5" class="pt-5 text-right text-black">
-                                    <h4><strong>Basket Total: £{{ total|floatformat:2 }}</strong></h4>
+                                <td colspan="5" class="pt-5 text-right">
+                                    <h4 class="basket"><strong>Basket Total: £{{ total|floatformat:2 }}</strong></h4>
                                 </td>
                             </tr>
                             <tr>
@@ -89,7 +89,7 @@
                     <span class="icon text-grey">
                         <i class="fas fa-chevron-left"></i>
                     </span>
-                    <span class="logo-font">Add more Treatments</span>
+                    <span class="logo-font basket">Add more Treatments</span>
                 </a>
             </div>
         </div>
