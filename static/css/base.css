@@ -484,6 +484,10 @@ input[name='q']::placeholder {
         font-size: .75rem;
     }
 
+    .shop-now {
+        width:auto;
+    }
+
     .increment-qty, .decrement-qty {
         padding: 0 !important;
     }
@@ -492,7 +496,7 @@ input[name='q']::placeholder {
         font-size: 13px;
     }
 
-    .fas {
+    .fa, .fab, .fad, .fal, .far, .fas {
         display:inline-flex;
     }
 
