@@ -16,7 +16,7 @@ body {
     align-content: center;
 }
 
-a {
+a, .text-info {
     color: goldenrod;
 }
 
@@ -498,6 +498,10 @@ input[name='q']::placeholder {
 
     .fa, .fab, .fad, .fal, .far, .fas {
         display:inline-flex;
+    }
+
+    .input-group-append, .input-group-prepend {
+        display: inline;
     }
 
     .btt-link, .update-link, .remove-item {
