@@ -67,7 +67,7 @@ The inspiration for creating this website is to bring a high-end and luxury look
 ### Project Scope and Limitations
 The scope of the project includes the creation of a spa treatment database with the features focusing on usability on mulitple devices and accessbility for anyone wanting to go to visit Luxe Retreat.
 
-The known limitation is the Luxe Retreat website currently just allows you to book a treatment without a calendar booking facility. To solve this limitation I would expand to include a calendar booking system with live availbility and also an opportunity for the user to add a specific staff member to the Treatment basket before checking out.
+The known limitation is the Luxe Retreat website currently just allows you to book a treatment without a calendar booking facility. To solve this limitation I would expand to include a calendar booking system with live availbility and also an opportunity for the user to add a specific staff member to the Treatment basket before checking out. 
 
 ## User Experience (UX)
 
@@ -142,3 +142,95 @@ Wireframes were created for mobile, tablet and desktop.
 ### Database Structure
 
 [DB Diagram](https://dbdiagram.io/d) was used to create my database structure.
+
+![Database](docs/database.png)
+
+#### Database Schema
+
+I first created a database structure and from this I decide to use the django internal database and then used PostgreSQL from Code Institute when deployed to Heroku.
+
+![Database Contents](docs/database_contents.png)
+
+#### Database tables
+
+I firstly added json files to gitpod and then pulled them through to django database.
+
+![JSON](docs/json.png)
+
+![Treatments Categories](docs/treatments_categories.png)
+
+![Treatments](docs/treatments_treatments.png)
+
+I then repeated this for memberships.
+
+## Features
+
+The website is comprised of:
+1. Home page
+    * Shows the Luxe Retreat with links to membership and treatments.
+
+    ![Home](docs/home.png)
+
+2. Register page
+    * Allows the user to register.
+    * If already registered it sends them to the login page.
+
+    ![Register](docs/register.png)
+
+3. Login page
+    * Allows the user to login.
+    * If not registered it sends them to the register page.
+
+    ![Login](docs/login.png)
+
+4. Facilities page
+    * Shows the user the facilities on offer at Luxe Retreat and when the mouse is hovered over the photos a description appears.
+
+    ![Facilities](docs/facilities.png)
+
+5. Membership page
+    * Allows user to view the different memberships on offer. This can be edit in the database.
+
+    ![Membership](docs/membership.png)
+
+6. Spa Treatments page
+    * The navigation button for Spa Treatments gives the treatments by categories for the users ease.
+
+    ![Nav Spa Treatments](docs/nav_spa.png)
+
+    * Shows the user all treatments available.
+
+    ![Spa Treatments](docs/treatments.png)
+
+    * Has a search feature.
+
+    ![Search](docs/search.png)
+
+7. Basket page
+    * Once the user has selected treatments it will go into their basket.
+
+    ![Basket](docs/basket.png)
+
+8. Checkout page
+    * Once the user as clicked on Secure Checkout in the Basket page it will send them through to the Checkout Page.
+
+    ![Checkout](docs/checkout.png)
+
+9. Checkout confirmation page
+    * Once the user has checkout, they get sent to this email confirmation page.
+
+    ![Thank You](docs/thankyou.png)
+
+10. My Profile & Treatments page
+    * Once the user is login they can view their profile and previous purchases, where the can update their address.
+    
+
+
+11. Admin
+
+
+    * Can only edit/delete as admin.
+
+    ![Edit and Delete](docs/editdelete.png)
+
+    ![Edit Page](docs/edit.png)
