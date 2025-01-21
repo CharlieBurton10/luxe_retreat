@@ -223,14 +223,23 @@ The website is comprised of:
 
 10. My Profile & Treatments page
     * Once the user is login they can view their profile and previous purchases, where the can update their address.
-    
 
+    ![Profile](docs/profile.png)
 
 11. Admin
+    * On admin login you get a new button on My Account nav bar, called 'Treatment Management'. Treatment Management allows you to add new treatments.
+    
+    ![Admin](docs/admin.png)
 
+    ![Add Treatment](docs/add.png)
 
     * Can only edit/delete as admin.
 
     ![Edit and Delete](docs/editdelete.png)
 
-    ![Edit Page](docs/edit.png)
+    ![Edit Treatment](docs/edit.png)
+
+12. Logout
+    * Allows the user to logout.
+    
+    ![Logout](docs/logout.png)
