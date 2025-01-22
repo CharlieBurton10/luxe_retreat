@@ -1,18 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+{% endblock %}
+
 {% block content %}
-    <!--404.html-->
-    <div class="overlay"></div>
+<div class="container mt-3 offset-1">
     <div class="row">
-        <div class="col s12 m8 offset-m2">
-            <div class="card-panel indigo lighten-5">
-                <h4 class="center-align indigo-text text-darken-4">
-                    404 Error!
-                    <br>
-                    This page does not exist.
-                </h4>
-                <br>
+        <div class="col">
+            <h2 class="logo-font">Page not found</h2>
+            <hr>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col">
+                <p>That page cannot be found.</p>
                 <a class="btn btn-primary btn-lg text-black" href="{% url 'home' %}" role="button">Home</a>
             </div>
         </div>
     </div>
-
+</div>
 {% endblock %}

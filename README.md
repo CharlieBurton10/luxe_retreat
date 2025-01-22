@@ -243,3 +243,211 @@ The website is comprised of:
     * Allows the user to logout.
     
     ![Logout](docs/logout.png)
+
+13. 404.html
+    * Redirects the user back to the home page to prevent them having to press the browser back button for better experience.
+
+    ![404 error page](docs/404.png)
+
+### General features on each page
+
+All pages on the website are responsive and have:
+
+* A favicon in the browser tab.
+
+![Favicon](docs/favicon.png)
+
+* All pages on the website have:
+  * Logo
+
+    ![logo](docs/logo.png)
+
+  * To the right of the navigation bar are the links to the websites login pages and the basket. 
+
+    ![Nav](docs/nav.png)
+
+  * In the center navigation bar sits links to the rest of the website.
+
+    ![Nav Spa Treatments](docs/nav_spa.png)
+
+    or collapsed for tablets and mobiles.
+
+    ![Mobile Nav](docs/mobilenav.png)
+
+    ![Mobile Nav](docs/mobilenav2.png)
+
+  * Toasts messages on all pages for different messages. An example below:
+
+    ![Toasts](docs/toasts.png)
+
+  * A footer which contains social media icon links to Facebook, Instagram and Twitter. 
+
+    ![Footer](docs/footer.png)
+
+### Future Implementations
+
+* Add calendar and staff members to make the purchase a complete booking.
+
+* Give the user an opportunity to by the membership throught the shop.
+
+* Add an online community for the members o view in their profile.
+
+### Accessibility
+
+ * I have made sure there is colour contrast on the site. 
+ 
+ * I have used a hover state on all buttons on the site to make it clear to the user if they are hovering over a button.
+
+## Technologies Used
+
+### Languages Used
+
+* HTML, CSS, JavaScript and Python were used to create this website.
+
+### Frameworks, Libraries & Programs Used
+
+* [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+
+* [Git](https://git-scm.com/) - For version control.
+
+* [Github](https://github.com/) - To save and store the files for the website.
+
+* [GitPod](https://gitpod.io/) - IDE used to create the site.
+
+* [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+
+* [Heroku](https://id.heroku.com/login) - Hosting Website
+
+* [jQuery](https://jquery.com/) - A JavaScript library.
+
+* [Django](https://www.djangoproject.com/) - Used as the Python framework for the site together with the Jinja template.
+
+* [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/) - Used as the non-relational database management with Django.
+
+* [Amazon AWS](https://aws.amazon.com/) - Used for storing static and media files.
+
+* [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+* [Bootstrap 4](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Used for the layout of the site.
+
+* [FontAwesome](https://fontawesome.com/) - Used to create some of the icons on the site.
+
+* [TinyPNG](https://tinypng.com/) - To compress image.
+
+* [Image Resizer](https://imageresizer.com/) - To resize image.
+
+* [Favicon.io](https://favicon.io/) - To create favicon.
+
+* [Am I Responsive?](http://ami.responsivedesign.is/) - To show the website image on a range of devices.
+
+* [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - A google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
+
+## Deployment & Local Development
+
+The site was deployed using GitHub and is hosted on Heroku and was deployed as follows:
+
+### Deployment 
+
+Github Pages was used to deploy the live website. The instructions to achieve this are below:
+
+1. Log in to Github.
+2. Find the repository for this project, luxe_retreat.
+3. Click on the Settings button.
+4. Click on the Pages button in the left hand side bar.
+5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
+6. Click Save. Your live Github Pages site is now deployed at the URL shown.
+
+### Local Development
+
+The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
+
+#### How to Fork
+
+To fork luxe_retreat repository:
+
+1. Log in to Github.
+2. Go to the repository for this project, CharlieBurton10/luxe_retreat
+3. Click the Fork button at the top of the page between Watch and Starred.
+
+#### How to Clone
+
+To clone luxe_retreat repository:
+
+1. Log in to Github.
+2. Go to the repository for this project, CharlieBurton10/luxe_retreat
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then enter.
+6. Then paste link from step 3 ($ git clone https://github.com/CharlieBurton10/luxe_retreat) and then press enter.
+
+### Creating an App with the Heroku :
+
+1. Navigate to [Heroku.com](https://www.heroku.com/).
+2. Create a new account or login.
+3. Click the **New** button, then **Create New App** button.
+4. Choose your app name and the region and click **Create App**.
+
+#### Connecting your Heroku account to your Github repository :
+
+1. In your app choose **Deploy** tab and choose *Github* as your deployment method. 
+2. Enter the GitHub repository name and click on *Search*.
+3. Once the correct repository is found, click on *Connect*.
+
+#### Setting you enviroment variables :
+
+![Heroku Config Vars](/docs/heroku.png)
+
+Navigate to **Settings** tab and click on *Reveal Config Vars* and set following variables :
+
+- DATABASE_URL : URL to your databse
+- DEBUG : Can be set to true but **ONLY** during development. It's extremely important to change it to false once development process is over.
+- IP : 0.0.0.0
+- PORT : 5000
+- SECRET_KEY : Your custom secret key.
+
+**PLEASE NOTE THAT YOU SHOULD NEVER SHARE ABOVE DETAILS WITH ANYONE DUE TO THE SECURITY REASONS!**
+
+**IMPORTANT** *In order to successfully deploy your project to Heroku, you must include requirements.txt and Procfile files.* 
+
+The following commands in the Gitpod CLI will create the relevant files :
+
+`pip3 freeze --local > requirements.txt`
+
+`echo web: python app.py > Procfile`
+
+## Credits
+
+### Code Snippets
+
+* [Facilities Gallery](https://tutorialzine.com/2018/03/3-amazing-bootstrap-4-gallery-templates) on Tutorialzine.
+
+### Tutorials
+
+*  Processes from the CI Project - Boutique Ado was used to help create this website - [Project - Boutique Ado](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+4/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/).
+
+
+### Images
+
+- [Holker Hall & Gardens Photo](https://unsplash.com/photos/brown-concrete-building-near-green-trees-under-blue-sky-during-daytime-9UE0xs9FvYg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) by Jonny Gios on Unsplash
+- [Big swimming Photo](https://unsplash.com/photos/a-large-indoor-swimming-pool-with-a-view-of-the-trees-ls2i2Mh0M4Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) by Patrick Robert Doyle on Unsplash
+- [Spa pool Photo](https://unsplash.com/photos/a-large-indoor-swimming-pool-in-a-house-xX0MKVVhHR4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) by Antonio Araujo on Unsplash
+- [Lounge area Photo](https://unsplash.com/photos/brown-leather-couch-beside-brown-wooden-table-GM7cm1IC6Ss?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) by Jennifer Latuperisa-Andresen on Unsplash
+- [Jacuzzi Photo](https://unsplash.com/photos/brown-leather-couch-beside-brown-wooden-table-GM7cm1IC6Ss?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) by Jennifer Latuperisa-Andresen on Unsplash
+- [Sauna Photo](https://unsplash.com/photos/brown-and-white-floral-round-table-K65M3GbRYq8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) by HUUM on Unsplash
+- [Lounge2 Photo](https://unsplash.com/photos/black-metal-framed-beige-padded-sofa-set-inside-room-XTC538P_eWk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) by Mateo Fernández on Unsplash
+- [Food Photo](https://unsplash.com/photos/sliced-bread-on-black-ceramic-plate-beside-clear-drinking-glass-uyRK0Bt7mQo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) by Matheus Frade on Unsplash
+- [Studio Photo](https://unsplash.com/photos/group-of-women-doing-yoga-gJtDg6WfMlQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) by bruce mars on Unsplash
+- [Spa Photo](https://unsplash.com/photos/a-couple-of-chairs-sitting-next-to-each-other-in-a-room-npE_I2GzpHY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) by Sherzod Gulomov on Unsplash
+- [Cafe Photo](https://unsplash.com/photos/brown-and-gray-concrete-store-nmpW_WwwVSc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) by Shawn on Unsplash
+- [Gym Photo](https://unsplash.com/photos/black-and-gray-treadmill-m27OTMegUyA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) by gina lin on Unsplash
+- [Breathe Photo](https://unsplash.com/photos/and-breathe-neon-sign-on-tre-buymYm3RQ3U?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) by Max van den Oetelaar on Unsplash
+- [Cloakroom Photo](https://unsplash.com/photos/a-room-with-a-row-of-clothes-on-the-wall-0Ik0xzhUTZw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) by K F on Unsplash
+
+- [Favicon](https://www.vecteezy.com/free-vector/lr-logo") by Lr Logo Vectors by Vecteezy
+  
+
+
+###  Acknowledgments
+
+ * My Code Institute Mentor, Can Sucullu, for his helpful feedback and support.
+ * Tutor Support at Code Institute.
