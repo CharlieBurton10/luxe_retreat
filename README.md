@@ -449,7 +449,9 @@ The W3C validator was used to validate the HTML on all pages of the website. It 
 
 [Logout Page HTML](docs/testing/w3clogout.png) - Passed
 
-[CSS Page HTML](docs/testing/w3cbag.png) - Passed
+[CSS Page HTML](docs/testing/w3ccss.png) - Passed
+
+JQuery Validator
 
 [JQuery Stripe Elements Page HTML](docs/testing/jquerycountryfield.png) - Passed
 
@@ -460,6 +462,10 @@ The W3C validator was used to validate the HTML on all pages of the website. It 
 #### First Time Visitor Goals
 
 * I want to be able view a list of treatments.
+  * The Spa Treatments page shows the treatments that have been added.
+
+  ![Treatments](docs/treatments.png)
+
 * I want to be able to navigate the site easily to find information about Luxe Retreat.
 * I want to be able to view the total of my purchases at any time.
 * I want to be able to find their social media pages.
