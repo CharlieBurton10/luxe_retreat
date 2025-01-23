@@ -1,3 +1,4 @@
+{% extends "base.html" %}
 {% load static %}
 
 {% block page_header %}
@@ -17,10 +18,10 @@
                 <hr class="w-50 mb-1">
             </div>
         </div>
+        <div class="row"></div>
         <div class="row">
             <div class="col text-center">
-                <p>That page cannot be found.</p>
-                <a class="btn btn-black rounded-0 btn-md" href="{% url 'home' %}" role="button">Home</a>
+                <h4>That page cannot be found.</h4>
             </div>
         </div>
     </div>
