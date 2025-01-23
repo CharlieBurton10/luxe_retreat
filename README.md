@@ -415,6 +415,15 @@ The following commands in the Gitpod CLI will create the relevant files :
 
 `echo web: python app.py > Procfile`
 
+## Testing
+
+Testing has been on going throughout the build with Chrome developer tools.
+
+### W3C Validator
+
+The W3C validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
+
+
 ## Credits
 
 ### Code Snippets
@@ -449,5 +458,4 @@ The following commands in the Gitpod CLI will create the relevant files :
 
 ###  Acknowledgments
 
- * My Code Institute Mentor, Can Sucullu, for his helpful feedback and support.
  * Tutor Support at Code Institute.
