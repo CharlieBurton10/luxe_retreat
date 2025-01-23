@@ -439,7 +439,7 @@ input[name='q']::placeholder {
     }
 
     .navbar {
-        position: none;
+        position: 0;
         padding: 0;
     }
 }

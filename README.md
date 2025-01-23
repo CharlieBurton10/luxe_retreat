@@ -423,6 +423,68 @@ Testing has been on going throughout the build with Chrome developer tools.
 
 The W3C validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
 
+[Home Page HTML](docs/testing/w3chome.png) - Passed
+
+[Facilities Page HTML](docs/testing/w3cfacilities.png) - Passed
+
+[Membership Page HTML](docs/testing/w3cmembership.png) - Passed
+
+[Treatments Page HTML](docs/testing/w3ctreatments.png) - Passed
+
+[Treatments-Add Page HTML](docs/testing/w3ctreatments-add.png) - Passed
+
+[Treatments-Edit Page HTML](docs/testing/w3ctreatments-edit.png) - Passed
+
+[Profile Page HTML](docs/testing/w3cprofile.png) - Passed
+
+[Bag Page HTML](docs/testing/w3cbag.png) - Passed
+
+[Checkout Page HTML](docs/testing/w3ccheckout.png) - Passed
+
+[Checkout Success Page HTML](docs/testing/w3ccheckout_success.png) - Passed
+
+[SignUp Page HTML](docs/testing/w3csignup.png) - Passed
+
+[Login Page HTML](docs/testing/w3clogin.png) - Passed
+
+[Logout Page HTML](docs/testing/w3clogout.png) - Passed
+
+[CSS Page HTML](docs/testing/w3cbag.png) - Passed
+
+[JQuery Stripe Elements Page HTML](docs/testing/jquerycountryfield.png) - Passed
+
+[JQuery Country Field Page HTML](docs/testing/jquerycountryfield.png) - Passed
+
+### Testing User Stories
+
+#### First Time Visitor Goals
+
+* I want to be able view a list of treatments.
+* I want to be able to navigate the site easily to find information about Luxe Retreat.
+* I want to be able to view the total of my purchases at any time.
+* I want to be able to find their social media pages.
+* I want the website to be responsive to whichever device I am using.
+* I want to be able to register for an account.
+
+#### Returning/Frequent Visitor Goals
+
+* I want to be able to log in and log out of my account.
+* I want to be able to recover my password.
+* I want to be able to receive an email confirmation after registering.
+* I want to be able to have a user profile.
+
+####  Shopper
+* I want to be able to sort by a specific treatment category.
+* I want to be able to search by treatment name or description and see the search results.
+* I want to be able to select the treatment quantity and then be able to adjust the quantity in the basket.
+* I want to be able to view the items in my basket.
+* I want to be able to enter my payment information  and feel that it is safe and secure.
+* I want to be able to view a confirmation order and be able to view it in my profile.
+
+#### Admin
+* I want to be able to add the treatments.
+* I want to be able to edit/update the treatments.
+* I want to be able to delete the treatments.
 
 ## Credits
 
