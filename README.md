@@ -575,7 +575,28 @@ JQuery Validator
 
   ![Delete](docs/editdelete.png)
 
+### Performance Testing
 
+[PageSpeed Insights](https://pagespeed.web.dev/) was used to measure the performance and speed of the website. 
+
+|     Page      |     Mobile    |    Desktop    |
+| ------------  | ------------- | ------------- |
+|  index.html  |    [Result](docs/testing/pagespeed-insights/indexmobile.png)   |    [Result](docs/testing/pagespeed-insights/indexdesktop.png)  | 
+|  facilities.html  |    [Result](docs/testing/pagespeed-insights/facilitiesmobile.png)   |    [Result](docs/testing/pagespeed-insights/facilitiesdesktop.png)  | 
+|  membership.html  |    [Result](docs/testing/pagespeed-insights/membershipmobile.png)   |    [Result](docs/testing/pagespeed-insights/membershipdesktop.png)  | 
+|  treatments.html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
+|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
+|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
+|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
+|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
+|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
+|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
+|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
+|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
+|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
+|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
+|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
+|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  |  
 
 ## Credits
 

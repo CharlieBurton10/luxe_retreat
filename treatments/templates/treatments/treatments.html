@@ -25,7 +25,7 @@
                 <div class="input-group w-100">
                     <input class="form-control border border-grey rounded-0" type="text" name="q" placeholder="Search our Treatments">
                     <div class="input-group-append">
-                        <button class="form-control btn btn-grey border border-grey rounded-0" type="submit">
+                        <button class="form-control btn btn-grey border border-grey rounded-0" aria-label="Submit Search" type="submit">
                             <span class="icon">
                                 <i class="fas fa-search"></i>
                             </span>
@@ -60,16 +60,16 @@
                                                 <div class="form-row">
                                                     <div class="col-12 form-group input-group mb-0">
                                                         <p class="mb-0"><strong>Quantity:</strong></p>
-                                                        <button class="input-group-prepend decrement-qty quantity-form btn btn-black rounded-0" data-item_id="{{ treatment.id }}" id="decrement-qty_{{ treatment.id }}">
+                                                        <button class="input-group-prepend decrement-qty quantity-form btn btn-black rounded-0" aria-label="Decrement Quantity" data-item_id="{{ treatment.id }}" id="decrement-qty_{{ treatment.id }}">
                                                             <i class="icon fas fa-minus"></i>
                                                         </button>
                                                         <input class="form-control qty_input quantity-form text-center" type="number" name="quantity" value="1" min="1" max="10" data-item_id="{{ treatment.id }}" id="id_qty_{{ treatment.id }}">
-                                                        <button class="input-group-append increment-qty quantity-form btn btn-black rounded-0" data-item_id="{{ treatment.id }}" id="increment-qty_{{ treatment.id }}">
+                                                        <button class="input-group-append increment-qty quantity-form btn btn-black rounded-0" data-item_id="{{ treatment.id }}"  aria-label="Increment Quantity" id="increment-qty_{{ treatment.id }}">
                                                             <i class="icon fas fa-plus"></i>
                                                         </button>
                                                     </div>
                                                     <div class="col-12 text-center mt-2">
-                                                        <input type="submit" class="btn btn-black btn-bag rounded-0 text-uppercase" value="Add to Basket">
+                                                        <input type="submit" class="btn btn-black btn-bag rounded-0 text-uppercase" aria-label="Add to Basket" value="Add to Basket">
                                                     </div>
                                                 </div>
                                             </form>
