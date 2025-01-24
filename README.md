@@ -577,26 +577,32 @@ JQuery Validator
 
 ### Performance Testing
 
-[PageSpeed Insights](https://pagespeed.web.dev/) was used to measure the performance and speed of the website. 
+[PageSpeed Insights](https://pagespeed.web.dev/) was used to measure the performance and speed of the main website pages. 
 
 |     Page      |     Mobile    |    Desktop    |
 | ------------  | ------------- | ------------- |
 |  index.html  |    [Result](docs/testing/pagespeed-insights/indexmobile.png)   |    [Result](docs/testing/pagespeed-insights/indexdesktop.png)  | 
 |  facilities.html  |    [Result](docs/testing/pagespeed-insights/facilitiesmobile.png)   |    [Result](docs/testing/pagespeed-insights/facilitiesdesktop.png)  | 
 |  membership.html  |    [Result](docs/testing/pagespeed-insights/membershipmobile.png)   |    [Result](docs/testing/pagespeed-insights/membershipdesktop.png)  | 
-|  treatments.html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
-|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
-|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
-|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
-|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
-|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
-|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
-|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
-|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
-|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
-|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
-|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  | 
-|  .html  |    [Result](docs/testing/pagespeed-insights)   |    [Result](docs/testing/pagespeed-insights)  |  
+|  treatments.html  |    [Result](docs/testing/pagespeed-insights/facilitiesmobile.png)   |    [Result](docs/testing/pagespeed-insights/facilitiesdesktop.png)  | 
+|  signin.html  |    [Result](docs/testing/pagespeed-insights/signinmobile.png)   |    [Result](docs/testing/pagespeed-insights/signindesktop.png)  | 
+|  bag.html  |    [Result](docs/testing/pagespeed-insights/basketmobile.png)   |    [Result](docs/testing/pagespeed-insights/basketdesktop.png)  | 
+|  404.html  |    [Result](docs/testing/pagespeed-insights/404mobile.png)   |    [Result](docs/testing/pagespeed-insights/404desktop.png)  | 
+
+### Further Testing
+
+ * The website was tested on Google Chrome, Safari and Microsoft Edge browsers.
+ * The website was tested on multiple devices: Desktop, Mackbook 14inch, iPad Pro and iPhone 14.
+ * All browsers and devices were tested on all pages to make sure all the pages and links are working properly.
+
+ ### Manual Testing
+
+#### All pages
+Feature | Expected Outcome	| Testing Performed |	Result	| Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Nav links:hover | Background colour when links are hovered | Hovered over each header link | Colour changed | Pass |
+| Nav links| Launches / resets nav links| Clicked the nav links| Links clicked and correct pages launched | Pass |
+| Social Media links| Text change colour when links are hovered | Hovered over each header link | Colour changed | Pass |
 
 ## Credits
 
