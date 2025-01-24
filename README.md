@@ -467,7 +467,15 @@ JQuery Validator
   ![Treatments](docs/treatments.png)
 
 * I want to be able to navigate the site easily to find information about Luxe Retreat.
+  * Site navigation is in the top right corner and in the center on every page of the website.
+
+  ![Nav](docs/nav.png)
+
+  ![Center Nav](docs/nav_spa.png)
+
 * I want to be able to view the total of my purchases at any time.
+  *
+
 * I want to be able to find their social media pages.
 * I want the website to be responsive to whichever device I am using.
 * I want to be able to register for an account.

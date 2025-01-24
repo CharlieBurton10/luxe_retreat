@@ -93,6 +93,10 @@ a:hover {
     font-size: 12px;
 }
 
+.text-gold {
+    color: goldenrod;
+}
+
 .text-black {
     color: grey !important;
     font-size: 20px;
