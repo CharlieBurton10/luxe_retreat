@@ -96,7 +96,7 @@ The known limitation is the Luxe Retreat website currently just allows you to bo
 * I want to be able to have a user profile.
 
 ####  Shopper
-* I want to be able to sort by a specific treatment category.
+* I want to be able to choose a specific treatment category.
 * I want to be able to search by treatment name or description and see the search results.
 * I want to be able to select the treatment quantity and then be able to adjust the quantity in the basket.
 * I want to be able to view the items in my basket.
@@ -326,6 +326,8 @@ All pages on the website are responsive and have:
 
 * [Amazon AWS](https://aws.amazon.com/) - Used for storing static and media files.
 
+* [Stripe](https://stripe.com/gb) - Used for secure checkout.
+
 * [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
 * [Bootstrap 4](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Used for the layout of the site.
@@ -474,31 +476,106 @@ JQuery Validator
   ![Center Nav](docs/nav_spa.png)
 
 * I want to be able to view the total of my purchases at any time.
-  *
+  * As items are add to the basket, the total updates in the basket nav.
+
+  ![Updated Basket](docs/basket_success.png)
 
 * I want to be able to find their social media pages.
+  * In the footer on every page sits links to the social media pages.
+
+  ![Social Media links](docs/footer.png)
+
 * I want the website to be responsive to whichever device I am using.
+  * I have checked that the website is responsive on multiple devices.
+
 * I want to be able to register for an account.
+  * The user can register and then add their own event.
+
+  ![Register](docs/register.png)
 
 #### Returning/Frequent Visitor Goals
 
 * I want to be able to log in and log out of my account.
+  * I have added a log in page so returning visitors can log back in.
+
+  ![Log In](docs/login.png)
+
+  ![Logout](docs/logout.png)
+
 * I want to be able to recover my password.
+  * They can reset their password by using their email address.
+
+  ![Password Reset](docs/password.png)
+
 * I want to be able to receive an email confirmation after registering.
+  * When a user resgisters it will send an email to verify the users email address.
+
+  ![Verify](docs/verify.png)
+
+  ![Email](docs/email.png)
+
+  ![Confirm](docs/confirm.png)
+
 * I want to be able to have a user profile.
+  * Once login users can view their personal profile and past purchases.
+
+  ![Profile](docs/profile.png)
+
 
 ####  Shopper
-* I want to be able to sort by a specific treatment category.
+* I want to be able to choose a specific treatment category.
+  * They can choose whether they want a facial or back massage.
+
+  ![Spa](docs/nav_spa.png)
+
 * I want to be able to search by treatment name or description and see the search results.
+  * Users can use the search bar to find specific treatments.
+
+  ![Back Search](docs/back-search.png)
+
 * I want to be able to select the treatment quantity and then be able to adjust the quantity in the basket.
+  * Users can edil quantity of treatment before adding to the basket and after in the basket.
+
+  ![Treatment Quantity](docs/quantity.png)
+
 * I want to be able to view the items in my basket.
+  * By clicking the basket icon in the nav, users can view their basket of treatments.
+
+  ![Basket](docs/basket.png)
+
 * I want to be able to enter my payment information  and feel that it is safe and secure.
+  * I have used Stripe to give users a secure checkout with their payment information.
+
+  ![Checkout](docs/checkout.png)
+
 * I want to be able to view a confirmation order and be able to view it in my profile.
+  * Once checkout is completed they get a confirmation it has been successful and then sits in their profile.
+
+  ![Checkout Confirmation](docs/thankyou.png)
+
+  ![Profile](docs/profile.png)
 
 #### Admin
 * I want to be able to add the treatments.
+  * Admin can add treatments in Treatment Management. 
+
+  ![Admin](docs/admin.png)
+
+  ![Add Treatment](docs/add.png)
+
 * I want to be able to edit/update the treatments.
+  * Admin can edit treatments in All Spa Treatments. 
+
+  ![Edit](docs/editdelete.png)
+
+  ![Edit Treatment](docs/edit.png)
+
 * I want to be able to delete the treatments.
+  * Admin can delete treatments in All Spa Treatments. 
+
+  ![Delete](docs/editdelete.png)
+
+
 
 ## Credits
 

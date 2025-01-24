@@ -16,13 +16,18 @@ body {
     align-content: center;
 }
 
-a, .text-info {
+a {
     color: goldenrod;
 }
 
 a:hover {
     color: goldenrod;
 } 
+
+a:not([href]) {
+    color: goldenrod;
+    text-decoration: none;
+}
 
 /* from Bulma */
 .icon {
