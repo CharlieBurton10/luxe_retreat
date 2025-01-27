@@ -577,7 +577,9 @@ JQuery Validator
 
 ### Performance Testing
 
-[PageSpeed Insights](https://pagespeed.web.dev/) was used to measure the performance and speed of the main website pages. 
+[PageSpeed Insights](https://pagespeed.web.dev/) was used to measure the performance and speed of the main website pages. There were also a few performance suggestions which could be implemented in future iterations.
+
+
 
 |     Page      |     Mobile    |    Desktop    |
 | ------------  | ------------- | ------------- |
@@ -601,8 +603,35 @@ JQuery Validator
 Feature | Expected Outcome	| Testing Performed |	Result	| Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Nav links:hover | Background colour when links are hovered | Hovered over each header link | Colour changed | Pass |
-| Nav links| Launches / resets nav links| Clicked the nav links| Links clicked and correct pages launched | Pass |
-| Social Media links| Text change colour when links are hovered | Hovered over each header link | Colour changed | Pass |
+| Nav links| Launches / resets nav links | Clicked the nav links| Links clicked and correct pages launched | Pass |
+| "Login / Register" Buttons | Log thems in and allows them to access there profile| Clicked button | Log thems in and shows their profile in the nav links | Pass |
+| Social Media links | Text change colour when links are hovered | Hovered over each header link | Colour changed | Pass |
+
+#### index.html
+Feature | Expected Outcome	| Testing Performed |	Result	| Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Button links:hover | Background colour when links are hovered | Hovered over each header link | Colour changed | Pass |
+| Button links| Launches correct pages | Clicked the button links | Links clicked and correct pages launched | Pass |
+
+#### facilities.html
+Feature | Expected Outcome	| Testing Performed |	Result	| Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Photo:hover | Photo description appears | Hovered over each Photo | Text appeared | Pass |
+
+#### treatments.html
+Feature | Expected Outcome	| Testing Performed |	Result	| Pass/Fail |
+| --- | --- | --- | --- | --- |
+| "Search" Button | Launches the search | Entered text to the search bar and clicked "Search" button | Search results appear on the page | Pass |
+| Adjust Quantity | Quantity number to plus and minus when +/- are pressed | Increased and descreased the number | Could adjust the quantity | Pass |
+| "Add to Basket" Button | Treatment to be added to Basket | Added a treatment to the Basket | Treatment appeared in the Basket with a toast confirmation | Pass |
+
+#### bag.html
+Feature | Expected Outcome	| Testing Performed |	Result	| Pass/Fail |
+| --- | --- | --- | --- | --- |
+| "Update/Delete" Buttons | To Update or Delete treatment from the basket | Updated and Deleted Treatments | Basket adjusted after an Update or Delete was clicked| Pass |
+| Button link | Launches correct page | Clicked the button links | Link clicked and correct page launched | Pass |
+| "Secure Checkout" Button | Leads to checkout.html to start checkout | Checkout to commence | checkout.html launched for users details to be added | Pass |
+
 
 ## Credits
 
@@ -634,8 +663,6 @@ Feature | Expected Outcome	| Testing Performed |	Result	| Pass/Fail |
 
 - [Favicon](https://www.vecteezy.com/free-vector/lr-logo") by Lr Logo Vectors by Vecteezy
   
-
-
 ###  Acknowledgments
 
  * Tutor Support at Code Institute.
