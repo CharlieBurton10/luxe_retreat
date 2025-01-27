@@ -632,6 +632,11 @@ Feature | Expected Outcome	| Testing Performed |	Result	| Pass/Fail |
 | Button link | Launches correct page | Clicked the button links | Link clicked and correct page launched | Pass |
 | "Secure Checkout" Button | Leads to checkout.html to start checkout | Checkout to commence | checkout.html launched for users details to be added | Pass |
 
+#### checkout.html
+Feature | Expected Outcome	| Testing Performed |	Result	| Pass/Fail |
+| --- | --- | --- | --- | --- |
+| User Checkouts their Basket | Photo description appears | Hovered over each Photo | Text appeared | Pass |
+
 
 ## Credits
 
