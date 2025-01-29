@@ -33,7 +33,7 @@ DEBUG = False
 
 
 ALLOWED_HOSTS = ['luxe-retreat-cf96daa6ac2f.herokuapp.com', 'localhost', '8000-charlieburt-luxeretreat-ohiu79p7nhv.ws.codeinstitute-ide.net',]
-#ALLOWED_HOSTS = ['8000-charlieburt-luxeretreat-ohiu79p7nhv.ws.codeinstitute-ide.net']
+# ALLOWED_HOSTS = ['8000-charlieburt-luxeretreat-ohiu79p7nhv.ws.codeinstitute-ide.net']
 
 # Application definition
 
@@ -197,7 +197,7 @@ if 'USE_AWS' in os.environ:
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com'
 
-        # Static and media files
+    # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
@@ -228,4 +228,4 @@ else:
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
-    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')   
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')

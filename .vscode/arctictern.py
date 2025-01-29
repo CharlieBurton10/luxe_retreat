@@ -60,13 +60,13 @@ def get_versions():
             THIS_VERSION = float(f.read().strip())
     else:
         with open(".vscode/version.txt", "w") as f:
-            f.write(str(THIS_VERSION))
-    
+            f.write(str(THIS_VERSION))    
     r = requests.get(BASE_URL + ".vscode/version.txt")
     CURRENT_VERSION = float(r.content)
 
     return {"this_version": THIS_VERSION,
             "current_version": CURRENT_VERSION}
+
 
 def needs_upgrade():
     """
@@ -75,8 +75,7 @@ def needs_upgrade():
     Returns True if upgrade is needed, False if not.
     """
 
-    versions = get_versions()
-    
+    versions = get_versions()    
     print(f"Upstream version: {versions['current_version']}")
     print(f"Local version: {versions['this_version']}")
 
@@ -97,7 +96,7 @@ def build_post_upgrade():
     upgrades = json.loads(r.content.decode("utf-8"))
     content = ""
 
-    for k,v in upgrades.items():
+    for k, v in upgrades.items():
         if float(k) > THIS_VERSION:
             print(f"Adding version changes for {k} to post_upgrade.sh")
             content += v
@@ -105,8 +104,7 @@ def build_post_upgrade():
     if content:
         content += FINAL_LINES
         with open(".vscode/post_upgrade.sh", "w") as f:
-            f.writelines(content)
-    
+            f.writelines(content)    
     print("Built post_upgrade.sh. Restart your workspace for it to take effect.")
 
 
@@ -132,8 +130,7 @@ def process(file, suffix):
         result = os.system(f"diff -q {file} {file}.tmp > /dev/null")
         if result != 0:
             os.remove(f"{file}.tmp")
-            return True
-    
+            return True    
     return False
 
 
@@ -152,8 +149,7 @@ def start_migration():
         print(f"Processing: {file['filename']}")
         result = process(file["filename"], file["url"])
         if result == True:
-            push_and_recreate = True
-    
+            push_and_recreate = True    
     if push_and_recreate:
         write_version()
 

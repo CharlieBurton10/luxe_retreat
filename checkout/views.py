@@ -14,6 +14,7 @@ from bag.contexts import bag_contents
 import stripe
 import json
 
+
 @require_POST
 def cache_checkout_data(request):
     try:
@@ -29,6 +30,7 @@ def cache_checkout_data(request):
         messages.error(request, 'Sorry, your payment cannot be \
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
+
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
@@ -81,12 +83,12 @@ def checkout(request):
                                     args=[order.order_number]))
         else:
             messages.error(request, ('There was an error with your form. '
-                                     'Please double check your information.'))
+                                     'Please double check your information. '))
     else:
-        bag = request.session.get('bag',{})
+        bag = request.session.get('bag', {})
         if not bag:
             messages.error(request,
-                            "There's nothing in your basket at the moment")
+                           "There's nothing in your basket at the moment")
             return redirect(reverse('treatments'))
 
         current_bag = bag_contents(request)
@@ -97,7 +99,6 @@ def checkout(request):
                 amount=stripe_total,
                 currency=settings.STRIPE_CURRENCY,
             )
-        
         # Attempt to prefill the form with any info the user maintains in their profile
         if request.user.is_authenticated:
             try:
@@ -129,6 +130,7 @@ def checkout(request):
         'client_secret': intent.client_secret,
     }
     return render(request, template, context)
+
 
 def checkout_success(request, order_number):
     """

@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Membership, Category
 
+
 class MembershipAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
@@ -17,6 +18,7 @@ class CategoryAdmin(admin.ModelAdmin):
         'friendly_name',
         'name',
     )
+
 
 # Register your models here.
 admin.site.register(Membership, MembershipAdmin)

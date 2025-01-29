@@ -6,7 +6,6 @@ from django.db.models import Q
 from .models import Treatment, Category
 from .forms import TreatmentForm
 
-# Create your views here.
 
 def all_treatments(request):
     """ A view to show all treatments, including sorting and search queries """
@@ -26,7 +25,6 @@ def all_treatments(request):
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('treatments'))
-            
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             treatments = treatments.filter(queries)
 
@@ -37,6 +35,7 @@ def all_treatments(request):
     }
 
     return render(request, 'treatments/treatments.html', context)
+
 
 @login_required
 def add_treatment(request):
@@ -53,7 +52,7 @@ def add_treatment(request):
             return redirect(reverse('treatments'))
         else:
             messages.error(request, 'Failed to add treatment. Please ensure the form is valid.')
-    else:    
+    else:
         form = TreatmentForm()
 
     template = 'treatments/add_treatment.html'
@@ -62,6 +61,7 @@ def add_treatment(request):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_treatment(request, treatment_id):
@@ -91,13 +91,13 @@ def edit_treatment(request, treatment_id):
 
     return render(request, template, context)
 
+
 @login_required
 def delete_treatment(request, treatment_id):
     """ Delete a treatment """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only managers can do that.')
         return redirect(reverse('home'))
-        
     treatment = get_object_or_404(Treatment, pk=treatment_id)
     treatment.delete()
     messages.success(request, 'Treatment deleted!')
