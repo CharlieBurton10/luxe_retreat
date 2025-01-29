@@ -635,7 +635,12 @@ Feature | Expected Outcome	| Testing Performed |	Result	| Pass/Fail |
 #### checkout.html
 Feature | Expected Outcome	| Testing Performed |	Result	| Pass/Fail |
 | --- | --- | --- | --- | --- |
-| User Checkouts their Basket | Photo description appears | Hovered over each Photo | Text appeared | Pass |
+| User Checks out their Basket | Checkout to be successfull | Completed checkout form and clicked "Complete Order" button | Confirmation of sucessfull order | Pass |
+
+#### profile.html
+Feature | Expected Outcome	| Testing Performed |	Result	| Pass/Fail |
+| --- | --- | --- | --- | --- |
+| "Update Information" Button | Contact detail information is updated | Changed some contact detail information and then submitted it | Contatc information was updated| Pass |
 
 
 ## Credits
