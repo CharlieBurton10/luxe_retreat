@@ -41,11 +41,11 @@
 
 * [Testing](#testing)
   * [W3C Validator](#w3c-validator)
-  * [Solved Bugs](#solved-bugs)
   * [Testing User Stories](#testing-user-stories)
   * [Performance Testing](#performance-testing)
   * [Further Testing](#further-testing)
   * [Manual Testing](#manual-testing)
+  * [Python Validation](#python-validation)
 
 * [Credits](#credits)
   * [Code Used](#code-used)
@@ -597,7 +597,7 @@ JQuery Validator
  * The website was tested on multiple devices: Desktop, Mackbook 14inch, iPad Pro and iPhone 14.
  * All browsers and devices were tested on all pages to make sure all the pages and links are working properly.
 
- ### Manual Testing
+### Manual Testing
 
 #### All pages
 Feature | Expected Outcome	| Testing Performed |	Result	| Pass/Fail |
@@ -641,6 +641,20 @@ Feature | Expected Outcome	| Testing Performed |	Result	| Pass/Fail |
 Feature | Expected Outcome	| Testing Performed |	Result	| Pass/Fail |
 | --- | --- | --- | --- | --- |
 | "Update Information" Button | Contact detail information is updated | Changed some contact detail information and then submitted it | Contatc information was updated| Pass |
+
+### Python Validation
+
+The code was validated using Python's own Flake8 utility using the command `python3 -m flake8`
+
+The results were:
+
+![Flake8 results](/docs/testing/flake8.png)
+
+I resolved the majority of these errors except:
+- A majority of the errors above are from automatically produced files (migrations. build-assets) so I left these alone.
+- In `settings.py` I could not get the lines any shorter as they contained API keys which could not be broken up.
+- `env.py` is not part of the deployed project since these variables are in the Heroku itself. This also impacts 'env' imported but unused error in `settings.py`
+- In `checkout/apps.py` checkout.signals is used for Stripe.
 
 
 ## Credits

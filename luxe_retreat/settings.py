@@ -31,9 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # DEBUG =  False #'DEVELOPMENT' in os.environ
 DEBUG = False
 
-
 ALLOWED_HOSTS = ['luxe-retreat-cf96daa6ac2f.herokuapp.com', 'localhost', '8000-charlieburt-luxeretreat-ohiu79p7nhv.ws.codeinstitute-ide.net',]
-# ALLOWED_HOSTS = ['8000-charlieburt-luxeretreat-ohiu79p7nhv.ws.codeinstitute-ide.net']
 
 # Application definition
 
